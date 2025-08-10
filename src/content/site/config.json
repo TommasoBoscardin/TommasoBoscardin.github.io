@@ -1,16 +1,16 @@
 {
   "home": {
-    "name": "ByteKai",
-    "title": "Software Engineer & Curious Tinkerer",
-    "introduction": "I’m constantly learning and evolving. I love diving into new ideas and finding creative ways to solve problems.",
+    "name": "Tommaso Boscardin",
+    "title": "Bachelor's degree in Computer Engineering",
+    "introduction": "Hi, I’m Tommaso. I hold a Bachelor’s degree in Ingegneria Informatica from the University of Padova and am currently pursuing a Master’s degree in Computer Engineering. I’m passionate about exploring advanced technologies and developing innovative software solutions. On this site, you’ll find my academic projects, research, and personal tech experiments. ",
     "sections": {
       "blog": {
-        "title": "Writing",
-        "viewAllText": "View all posts"
+        "title": "Thesis",
+        "viewAllText": "View all thesis"
       },
-      "projects": {
-        "title": "Projects",
-        "viewAllText": "View all projects"
+      "education": {
+        "title": "Education",
+        "viewAllText": "View full résumé"
       },
       "experience": {
         "title": "Experience",
@@ -20,11 +20,15 @@
     "socialLinks": [
       {
         "platform": "GitHub",
-        "url": "https://github.com/bytekai"
+        "url": "https://github.com/TommasoBoscardin"
       },
       {
-        "platform": "Twitter",
-        "url": "https://x.com/byteekai"
+        "platform": "Instagram",
+        "url": "https://www.instagram.com/tommaso.boscardin"
+      },
+      {
+        "platform": "Email",
+        "url": "mailto:tommaso.boscardin@gmail.com"
       }
     ]
   }

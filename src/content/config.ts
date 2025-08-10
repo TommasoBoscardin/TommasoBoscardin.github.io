@@ -29,6 +29,21 @@ const experience = defineCollection({
     })
 });
 
+const education = defineCollection({
+    loader: glob({
+        pattern: "**/*.md",
+        base: "./src/content/education"
+    }),
+    schema: z.object({
+        title: z.string(),
+        logo: z.string(),
+        description: z.string(),
+        startDate: z.coerce.date(),
+        endDate: z.coerce.date().optional(),
+        current: z.boolean().optional().default(false),
+    })
+});
+
 const projects = defineCollection({
     loader: glob({
         pattern: "**/*.md",
@@ -54,7 +69,7 @@ const site = defineCollection({
                 title: z.string(),
                 viewAllText: z.string(),
             }),
-            projects: z.object({
+            education: z.object({
                 title: z.string(),
                 viewAllText: z.string(),
             }),
@@ -103,6 +118,7 @@ const bookmarks = defineCollection({
 export const collections = {
     blog,
     experience,
+    education,
     projects,
     site,
     notes,

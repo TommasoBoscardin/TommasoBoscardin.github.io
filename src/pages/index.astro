@@ -17,7 +17,7 @@ const formatDate = (date: Date | undefined) => {
   if (!date) return "";
   return date.toLocaleDateString("en-US", {
     month: "short",
-    day: "numeric",
+    year: "numeric"
   });
 };
 
@@ -36,9 +36,14 @@ const sortedExperiences = experiences.sort(
   (a: CollectionEntry<"experience">, b: CollectionEntry<"experience">) =>
     b.data.startDate.getTime() - a.data.startDate.getTime()
 );
-
+const educations = await getCollection("education");
+const sortedEducations = educations.sort(
+  (a: CollectionEntry<"education">, b: CollectionEntry<"education">) =>
+    b.data.startDate.getTime() - a.data.startDate.getTime()
+);
+/*
 const projects = await getCollection("projects");
-const featuredProjects = projects.filter((project: CollectionEntry<"projects">) => project.data.featured).slice(0, 3);
+const featuredProjects = projects.filter((project: CollectionEntry<"projects">) => project.data.featured).slice(0, 3);*/
 ---
 
 <BaseLayout title={`${site.name} - Portfolio`} description={site.introduction}>
@@ -82,7 +87,7 @@ const featuredProjects = projects.filter((project: CollectionEntry<"projects">) 
       </ContentList>
     </Section>
 
-    <section class="section">
+    <!--<section class="section">
       <div class="section-header">
         <h2>{site.sections.projects.title}</h2>
         <a href="/projects">{site.sections.projects.viewAllText}</a>
@@ -108,9 +113,34 @@ const featuredProjects = projects.filter((project: CollectionEntry<"projects">) 
           ))
         }
       </ContentList>
-    </section>
+    </section>-->
 
     <section class="section">
+      <div class="section-header">
+        <h2>{site.sections.education.title}</h2>
+        <a href="/education">{site.sections.education.viewAllText}</a>
+      </div>
+      <div class="content-list">
+        {
+          sortedEducations.slice(0, 2).map((exp) => (
+            <article>
+              <div class="title-row">
+                <div class="company-info">
+                  <img src={exp.data.logo} alt="" class="company-logo" />
+                  <span>{exp.data.title}</span>
+                </div>
+                <time>
+                  {formatDate(exp.data.startDate)} - {exp.data.current ? "Present" : formatDate(exp.data.endDate)}
+                </time>
+              </div>
+              <p class="muted-text">{exp.data.description}</p>
+            </article>
+          ))
+        }
+      </div>
+    </section>
+
+<section class="section">
       <div class="section-header">
         <h2>{site.sections.experience.title}</h2>
         <a href="/experience">{site.sections.experience.viewAllText}</a>

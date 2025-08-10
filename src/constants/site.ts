@@ -4,8 +4,8 @@ export type NavigationItem = {
 };
 
 export const SITE = {
-    name: "ByteKai",
-    title: "Software Engineer & Curious Tinkerer",
+    name: "Tommaso Boscardin",
+    title: "Computer Engineer",
     description: "Personal portfolio and blog",
     url: "https://bytekai.dev",
     defaultImage: "/default-og-image.jpg",
@@ -16,8 +16,8 @@ export const NAVIGATION: {
 } = {
     main: [
         { name: "Home", path: "/" },
-        { name: "Blog", path: "/blog" },
-        { name: "Notes", path: "/notes" },
+        { name: "Thesis", path: "/blog" },
+        { name: "Project", path: "/notes" },
         { name: "Bookmarks", path: "/bookmarks" }
     ],
 } as const;
