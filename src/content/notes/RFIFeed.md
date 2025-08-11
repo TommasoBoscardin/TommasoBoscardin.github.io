@@ -5,7 +5,9 @@ publishedAt: 2025-06-16
 category: "Android"
 ---
 
-The app provides notifications related to RSS feeds made available by RFI. A background worker performs a fetch every 15 minutes to download new data; this fetch can be performed manually. Specifically, users can decide whether to receive the latest news, press releases, mobility information, and alerts. They can also filter feeds by region to receive only relevant updates. A summary of all received feeds is available when the app opens. Clicking on a specific feed brings up a screen with more details and a link to the full story. In the settings page, users can choose to delete the local database and receive a maximum of one notification at a time.
+*Kotlin*
+
+The Android app provides notifications related to RSS feeds made available by RFI. A background worker performs a fetch every 15 minutes to download new data; this fetch can be performed manually. Specifically, users can decide whether to receive the latest news, press releases, mobility information, and alerts. They can also filter feeds by region to receive only relevant updates. A summary of all received feeds is available when the app opens. Clicking on a specific feed brings up a screen with more details and a link to the full story. In the settings page, users can choose to delete the local database and receive a maximum of one notification at a time.
 
 To ensure maximum user customization, the app uses five notification channels. The notification containing a new feed is expandable; clicking it takes you to a screen with all the details and features two buttons: one to open the news item in the browser and the second to open the notification channel settings.
 

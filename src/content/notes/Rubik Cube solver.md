@@ -5,6 +5,8 @@ publishedAt: 2020-05-05
 category: "Web"
 ---
 
+*Html, Css, Js*
+
 An online 2x2x2 Rubik's cube solver with step by step solution.
 
 The project was developed only in Html, Js and Css without using libraries and frameworks.

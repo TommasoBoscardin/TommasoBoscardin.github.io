@@ -18,9 +18,9 @@ const categories = [...new Set(notes.map((note: Note) => note.data.category))];
 const sortedNotes = notes.sort((a: Note, b: Note) => b.data.publishedAt.getTime() - a.data.publishedAt.getTime());
 ---
 
-<BaseLayout title="Projects" description="Some projects developed for university's courses and for my personal interest and for improve my skills">
+<BaseLayout title="Projects" description="Some projects developed for university courses, as well as for my personal interests and to improve my skills. I am particularly fascinated by the intersection of electronics and software, especially in low-level programming. On the other hand, I also enjoy developing web applications for the powerful languages that allow me to create visually appealing features quickly.">
   <Container>
-    <BaseHero title="Projects" description="Some projects developed for university's courses and for my personal interest and for improve my skills" />
+    <BaseHero title="Projects" description="Some projects developed for university courses, as well as for my personal interests and to improve my skills. I am particularly fascinated by the intersection of electronics and software, especially in low-level programming. On the other hand, I also enjoy developing web applications for the powerful languages that allow me to create visually appealing features quickly." />
 
     <Categories categories={categories} currentPath={Astro.url.pathname} basePath="notes" />
 

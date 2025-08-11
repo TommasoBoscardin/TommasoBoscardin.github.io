@@ -2,7 +2,8 @@
   "home": {
     "name": "Tommaso Boscardin",
     "title": "Bachelor's degree in Computer Engineering",
-    "introduction": "Hi, I’m Tommaso. I hold a Bachelor’s degree in Ingegneria Informatica from the University of Padova and am currently pursuing a Master’s degree in Computer Engineering. I’m passionate about exploring advanced technologies and developing innovative software solutions. On this site, you’ll find my academic projects, research, and personal tech experiments. ",
+    "location": "Montebello Vicentino, Italy",
+    "introduction": "Hi, I’m Tommaso. I hold a Bachelor’s degree in Ingegneria Informatica from the University of Padova and am currently pursuing a Master’s degree in Computer Engineering. I’m passionate about exploring technologies and learning new skills in the field of software, hardware and computers. On this site, you’ll find my academic projects, thesis, and some personal tech experiments. ",
     "sections": {
       "blog": {
         "title": "Thesis",
@@ -29,6 +30,10 @@
       {
         "platform": "Email",
         "url": "mailto:tommaso.boscardin@gmail.com"
+      },
+      {
+        "platform": "Telegram",
+        "url": "https://t.me/TommasoBoscardin"
       }
     ]
   }

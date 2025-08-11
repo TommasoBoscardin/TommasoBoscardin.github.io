@@ -50,7 +50,8 @@ const featuredProjects = projects.filter((project: CollectionEntry<"projects">) 
   <Container>
     <section class="hero">
       <h1>{site.name}</h1>
-      <p class="subtitle">{site.title}</p>
+      <p class="subtitle" style="margin-bottom: 0.2rem;">{site.title}</p>
+      <p class="location">Located in {site.location}</p>
       <p class="introduction">{site.introduction}</p>
       {
         site.socialLinks && (
@@ -182,6 +183,11 @@ const featuredProjects = projects.filter((project: CollectionEntry<"projects">) 
   .introduction {
     margin: 1.5rem 0;
     opacity: 0.9;
+  }
+
+  .location {
+    margin-bottom: 1.5rem;
+    opacity: 0.7;
   }
 
   .section {
