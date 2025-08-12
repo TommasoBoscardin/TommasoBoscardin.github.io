@@ -2,7 +2,7 @@
   "home": {
     "name": "Tommaso Boscardin",
     "title": "Bachelor's degree in Computer Engineering",
-    "location": "Montebello Vicentino, Italy",
+    "location": "Vicenza, Italy",
     "introduction": "Hi, I’m Tommaso. I hold a Bachelor’s degree in Ingegneria Informatica from the University of Padova and am currently pursuing a Master’s degree in Computer Engineering. I’m passionate about exploring technologies and learning new skills in the field of software, hardware and computers. On this site, you’ll find my academic projects, thesis, and some personal tech experiments. ",
     "sections": {
       "blog": {
@@ -28,12 +28,8 @@
         "url": "https://www.instagram.com/tommaso.boscardin"
       },
       {
-        "platform": "Email",
-        "url": "mailto:tommaso.boscardin@gmail.com"
-      },
-      {
-        "platform": "Telegram",
-        "url": "https://t.me/TommasoBoscardin"
+        "platform": "LinkedIn",
+        "url": "https://www.linkedin.com/in/tommaso-boscardin-22135137a/"
       }
     ]
   }

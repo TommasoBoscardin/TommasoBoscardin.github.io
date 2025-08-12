@@ -1,6 +1,6 @@
 ---
 title: "RFI Feed"
-description: "A symple Android app that provides notifications about RFI's news, notices, press releases and infomobility."
+description: "A simple Android app that provides notifications about RFI's news, notices, press releases and infomobility."
 publishedAt: 2025-06-16
 category: "Android"
 ---
@@ -13,4 +13,4 @@ To ensure maximum user customization, the app uses five notification channels. T
 
 In addition to feed notifications, the app can send a status notification that disappears after 15 minutes and, when clicked, opens the app. Specifically, when a manual data fetch is performed and no new feeds are found, the app notifies the user; when the local database is reset, the app alerts the user; and finally, if the background worker fails to fetch data, it sends a notification.
 
-Project developed for Embedded systems programming course. Full code here.
+Project developed for Embedded systems programming course.
