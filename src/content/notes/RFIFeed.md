@@ -14,3 +14,11 @@ To ensure maximum user customization, the app uses five notification channels. T
 In addition to feed notifications, the app can send a status notification that disappears after 15 minutes and, when clicked, opens the app. Specifically, when a manual data fetch is performed and no new feeds are found, the app notifies the user; when the local database is reset, the app alerts the user; and finally, if the background worker fails to fetch data, it sends a notification.
 
 Project developed for Embedded systems programming course.
+
+<div style="display: flex; overflow-x: scroll;">
+<img src="../../../public/images/projects/rfi1.jpg" width="210" alt="example" />
+<img src="../../../public/images/projects/rfi2.jpg" width="210" alt="example"/>
+</div>
+<style>
+    img{margin:10px;}
+</style>

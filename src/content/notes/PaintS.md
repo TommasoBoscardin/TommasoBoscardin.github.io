@@ -13,3 +13,5 @@ The canvas can be visualised and edited by unlimited number of users. No need to
 
 The project was developed only in Html, Js, Css, SQL and Php without using libraries and frameworks.
 The web page is available [here](https://provsito.altervista.org/paint/index.php).
+
+![Example](../../../public/images/projects/paint.gif)

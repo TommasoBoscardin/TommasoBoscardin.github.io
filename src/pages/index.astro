@@ -49,9 +49,16 @@ const featuredProjects = projects.filter((project: CollectionEntry<"projects">) 
 <BaseLayout title={`${site.name} - Portfolio`} description={site.introduction}>
   <Container>
     <section class="hero">
-      <h1>{site.name}</h1>
-      <p class="subtitle" style="margin-bottom: 0.2rem;">{site.title}</p>
-      <p class="location">Located in {site.location}</p>
+      <div class="info">
+        <div>
+          <h1>{site.name}</h1>
+          <p class="subtitle" style="margin-bottom: 0.2rem;">{site.title}</p>
+          <p class="location">Located in {site.location}</p>
+        </div>
+        <div style="display: flex; justify-content: center;">
+          <img src="../../public/images/foto_profilo.JPG" class="profile-picture">
+        </div>
+      </div>
       <p class="introduction">{site.introduction}</p>
       {
         site.socialLinks && (
@@ -245,6 +252,16 @@ const featuredProjects = projects.filter((project: CollectionEntry<"projects">) 
     margin-top: 2rem;
     opacity: 0.7;
   }
+  .profile-picture {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+  }
+  .info{
+    display: flex; 
+    justify-content: space-between;
+    max-width: 70ch;
+  }
 
   @media (max-width: 640px) {
     main {
@@ -257,6 +274,14 @@ const featuredProjects = projects.filter((project: CollectionEntry<"projects">) 
 
     .container {
       padding: 0 1rem;
+    }
+
+    .info{
+      flex-direction: column-reverse;
+    }
+
+    .profile-picture{
+      margin-bottom: 2rem;
     }
   }
 </style>
