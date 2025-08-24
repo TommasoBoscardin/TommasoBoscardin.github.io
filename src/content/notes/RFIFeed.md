@@ -16,8 +16,8 @@ In addition to feed notifications, the app can send a status notification that d
 Project developed for Embedded systems programming course.
 
 <div style="display: flex; overflow-x: scroll;">
-<img src="../../../public/images/projects/rfi1.jpg" width="210" alt="example" />
-<img src="../../../public/images/projects/rfi2.jpg" width="210" alt="example"/>
+<img src="/images/projects/rfi1.jpg" width="210" alt="example" />
+<img src="/images/projects/rfi2.jpg" width="210" alt="example"/>
 </div>
 <style>
     img{margin:10px;}
